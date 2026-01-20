@@ -3,7 +3,10 @@ import json
 import re
 import sys
 from lxml import html
-from lxml.html.clean import Cleaner
+try:
+    from lxml.html.clean import Cleaner
+except ImportError:
+    from lxml_html_clean import Cleaner
 
 if sys.version_info[0] == 2:
     from urllib import quote_plus
