@@ -1,4 +1,4 @@
-lxml
+
 requests
 requests_toolbelt
-lxml[html_clean]
+lxml-html-clean
